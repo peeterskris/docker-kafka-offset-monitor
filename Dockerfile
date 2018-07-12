@@ -22,4 +22,4 @@ WORKDIR /data
 
 VOLUME ["/data"]
 
-CMD exec java -cp /KafkaOffsetMonitor-assembly-*.jar com.quantifind.kafka.offsetapp.OffsetGetterWeb --port 8080 --zk $ZK --refresh $REFRESH --retain $RETAIN
+CMD exec java -cp /KafkaOffsetMonitor-assembly-*.jar com.quantifind.kafka.offsetapp.OffsetGetterWeb --port 8080 --zk $ZK --refresh $REFRESH --retain $RETAIN --offsetStorage kafka
